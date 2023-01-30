@@ -5,19 +5,23 @@ interface BannerProps {}
 
 const Banner: FunctionComponent<BannerProps> = () => {
     return (
-        <div className="h-96 bg-sky-500 flex flex-col justify-center">
-            <div className="flex justify-center">
-                <h1 className="font-bold text-7xl text-white">
-                    <span className="text-slate-700">J</span>amie{" "}
-                    <span className="text-slate-700">K</span>ennedy
+        <header className="aspect-banner min-h-400 w-full bg-center bg-wave bg-cover bg-no-repeat flex flex-col justify-start space-y-2 p-24 font-oswald">
+            <div className="flex justify-center ">
+                <h1 className="font-bold text-7xl text-white drop-shadow-2xl text-center">
+                    <span className="text-sky-500">J</span>amie{" "}
+                    <span className="text-sky-500">K</span>ennedy
                 </h1>
             </div>
-            <div className="flex justify-center">
-                <h3 className="font-bold text-3xl text-white">
-                    A Full Stack Web Developer
-                </h3>
+            <div className="flex justify-center text-center">
+                <h2 className="font-bold text-3xl text-white">
+                    Full Stack Web Developer
+                </h2>
             </div>
-            <div className="flex justify-center space-x-4 pt-2">
+            <div className="flex justify-center align-middle space-x-1 font-bold text-xl text-white text-center">
+                <span className="material-symbols-outlined">home_pin</span>
+                <h3 className="">North West, England</h3>
+            </div>
+            {/* <div className="flex justify-center space-x-4 pt-2">
                 <IconLink
                     iconUrl="icons/github.png"
                     linkUrl="https://github.com/JamieKennedy"
@@ -26,8 +30,8 @@ const Banner: FunctionComponent<BannerProps> = () => {
                     iconUrl="icons/linkedin.png"
                     linkUrl="https://www.linkedin.com/in/jamiekennedy98/"
                 />
-            </div>
-        </div>
+            </div> */}
+        </header>
     );
 };
 
